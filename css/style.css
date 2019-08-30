@@ -3,6 +3,7 @@ html {
     width: 100%;
     height: 100%;
     margin: 0;
+    background-color: #232a34;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -25,7 +26,7 @@ p {
 .main-head {
     width: 100%;
     height: 100%;
-    background-color: #292929;
+    
     
 }
 
@@ -60,90 +61,68 @@ p {
 
 .card:hover {
     border: 1px solid #d73e4d;
-/*    display: block;*/
 
 }
-.main-head .card:hover p
+.main-head .card .card-item
 {
-    opacity: 1;
-    transform: translate3D(0,0,0);
-    color: white;
-    
-      
-    
-}
-.main-head .card:hover h6 a
-{
-    color: #d73e4d;
-/*    position: absolute;*/
-    
-}
-.main-head .card:hover > .card-item
-{
-    transform: translateY(-18px);
-    transition-duration: 0.7s;
-    transition-timing-function: ease-in-out;
-/*    transition-delay: 0.3s;*/
-    transition-property: all;
-    top: -5px;
-    
-}
-.card:hover > .card-item > .card-img > .font
-{
-    color: #d73e4d;
-        background-color: #292929;
-    padding: 0px 20px;
-    
-    
-}
-.font
-{
-    color: #6f6f6f;
-    font-size: 48px;
-    padding: 10px 0px;
-    margin: 0;
-    width: 80px;
-}
-
-.main-head .card .card-item {
-        position: absolute;
-    width: 100%;
+    position: absolute;
+    top: 120px;
     left: 0;
     right: 0;
-    top: 120px;
-    transition: 0.3s all ease-in-out;
+    width: 100%;
+    
+    
+}
+.main-head .card:hover .card-item
+{
+    top: -10px;
+}
+.main-head .card .card-item .card-img
+{
+    font-size: 48px;
+    color: #808489;
+    width: 80px;
+    background-color: #232a34;
+    margin: 0 auto;
+}
+.main-head .card:hover .card-item .card-img
+{
+    color: #d73e4d;
 }
 h6
 {
     font-size: 18px;
     color: #292929;
-    text-transform: uppercase;
     font-weight: 700;
-    padding: 15px 0px;
 }
-
-.card-item  h6 a {
-    color: #6f6f6f;
-   
-    line-height: 19px;
-    margin: 0;
-    padding: 20px 0px;
+.main-head .card .card-item a
+{
+    color: #808489;
+    text-transform: capitalize;
+    margin-top: 33px;
     text-decoration: none;
-/*    transition: all 0.7s ease-in-out;*/
+    display: inline-block;
 }
-.main-head .card p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    margin: 0;
-/*    padding: 10px 0px;*/
+.com
+{
+    transition: 0.3s all ease-in-out;
+}
+.main-head .card:hover .card-item h6 a
+{
+    color: #d73e4d;
+}
+.main-head .card p
+{
     opacity: 0;
-    text-align: center;
-  transition: 0.4s all ease-in-out;
     transition-delay: 0.3s;
-
-    transform: translateY(60px);
-   
-
-    
+    padding: 15px 0px;
+    transform: translate3d(0,200px,0);
+    transition: 0.4s all ease-in-out;
 }
+.main-head .card:hover p
+{
+    opacity: 1;
+    color: white;
+    transform: translate3d(0,0,0);
+}
+
